@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="uva254_wwtp">
+			<state id="below_24" />
+			<state id="above_24" />
+			<probabilities>0.9968306095939047 0.003169390406095497</probabilities>
+		</cpt>
+		<cpt id="doc_wwtp">
+			<state id="below_6" />
+			<state id="above_6" />
+			<probabilities>0.9978113844861557 0.002188615513844498</probabilities>
+		</cpt>
+		<cpt id="benzo_wwtp">
+			<state id="below_6000" />
+			<state id="above_6000" />
+			<probabilities>0.7189528208717478 0.2810471791282523</probabilities>
+		</cpt>
+		<cpt id="diclo_wwtp">
+			<state id="below_300" />
+			<state id="above_300" />
+			<probabilities>0.09281907190928142 0.9071809280907187</probabilities>
+		</cpt>
+		<cpt id="gaba_wwtp">
+			<state id="below_300" />
+			<state id="above_300" />
+			<probabilities>0.9959100409075944 0.004089959092405736</probabilities>
+		</cpt>
+		<cpt id="delta_do_ant">
+			<state id="below_4" />
+			<state id="above_4" />
+			<parents>uva254_wwtp doc_wwtp</parents>
+			<probabilities>0.04779982268645787 0.9522001773135421 0.001012111315234402 0.9989878886847657 0.00358002859812509 0.996419971401875 0.0008088564622717322 0.9991911435377282</probabilities>
+		</cpt>
+		<cpt id="uva254_ant">
+			<state id="below_15" />
+			<state id="above_15" />
+			<parents>delta_do_ant uva254_wwtp doc_wwtp</parents>
+			<probabilities>0.9349997195737522 0.06500028042624791 0.9955357142857144 0.004464285714285715 0.5883084577114428 0.4116915422885572 0.1829293344289236 0.8170706655710765 0.8509480363118818 0.1490519636881182 0.08814427989394037 0.9118557201060595 0.001040736163287282 0.9989592638367127 0.0004899257211609649 0.9995100742788391</probabilities>
+		</cpt>
+		<cpt id="doc_ant">
+			<state id="below_10" />
+			<state id="above_10" />
+			<parents>delta_do_ant uva254_wwtp doc_wwtp</parents>
+			<probabilities>0.9969353636181235 0.00306463638187655 0.9954128440366973 0.004587155963302753 0.9997491219267437 0.0002508780732563974 0.723323793949305 0.276676206050695 0.9864200051514709 0.01357999484852909 0.1129860710950384 0.8870139289049617 0.4834122221494644 0.5165877778505356 0.03760845854305764 0.9623915414569423</probabilities>
+		</cpt>
+		<cpt id="benzo_ant">
+			<state id="below_4300" />
+			<state id="above_4300" />
+			<parents>delta_do_ant uva254_wwtp benzo_wwtp</parents>
+			<probabilities>0.9086189494480953 0.09138105055190483 0.8126117883149092 0.1873882116850909 0.9555616550417635 0.04443834495823646 0.9508729054033382 0.04912709459666181 0.9808190943290088 0.0191809056709911 0.9612561628874504 0.03874383711254957 0.997767958345563 0.002232041654437119 0.9879351942695958 0.01206480573040423</probabilities>
+		</cpt>
+		<cpt id="diclo_ant">
+			<state id="below_750" />
+			<state id="above_750" />
+			<parents>doc_wwtp diclo_wwtp</parents>
+			<probabilities>0.9989221264112366 0.001077873588763446 0.05515376735458356 0.9448462326454165 0.9945054945054945 0.005494505494505495 0.01909209405579792 0.9809079059442022</probabilities>
+		</cpt>
+		<cpt id="gaba_ant">
+			<state id="below_3000" />
+			<state id="above_3000" />
+			<parents>delta_do_ant doc_wwtp gaba_wwtp</parents>
+			<probabilities>0.9999960823889279 3.917611072109116e-06 0.8806675062972292 0.1193324937027708 0.9939664218258132 0.00603357817418678 0.8814662273476112 0.1185337726523888 0.9999999483850296 5.161497048862449e-08 0.9331530139103555 0.06684698608964451 0.9999963030976009 3.696902399088006e-06 0.9234986311346074 0.07650136886539266</probabilities>
+		</cpt>
+		<cpt id="delta_do_sand">
+			<state id="below_2" />
+			<state id="above_2" />
+			<parents>uva254_ant doc_ant</parents>
+			<probabilities>0.3803448553974814 0.6196551446025187 0.004638218923933209 0.9953617810760668 0.3155542642248266 0.6844457357751733 0.2173814013984786 0.7826185986015215</probabilities>
+		</cpt>
+		<cpt id="uva254_sand">
+			<state id="below_15" />
+			<state id="above_15" />
+			<parents>delta_do_sand doc_ant uva254_ant</parents>
+			<probabilities>0.9999368507462878 6.314925371216972e-05 0.5105943074018012 0.4894056925981988 0.996031746031746 0.00396825396825397 0.1154473708051664 0.8845526291948338 0.9998841631754578 0.000115836824542136 0.5067438371610303 0.4932561628389697 0.9999509803921569 4.901960784313727e-05 0.1264071765291618 0.8735928234708382</probabilities>
+		</cpt>
+		<cpt id="doc_sand">
+			<state id="below_9" />
+			<state id="above_9" />
+			<parents>doc_ant uva254_ant</parents>
+			<probabilities>0.9995951306789376 0.0004048693210623382 0.952386381296869 0.04761361870313094 0.9917647058823529 0.008235294117647059 0.4395821136881314 0.5604178863118686</probabilities>
+		</cpt>
+		<cpt id="benzo_sand">
+			<state id="below_3800" />
+			<state id="above_3800" />
+			<parents>delta_do_sand doc_ant uva254_ant benzo_ant</parents>
+			<probabilities>0.9999562777204057 4.372227959429228e-05 0.9999966966262994 3.303373700650539e-06 0.999999983180564 1.681943600153207e-08 0.9692110660661752 0.03078893393382464 0.9999970312443431 2.968755656927699e-06 0.9955445544554455 0.004455445544554456 0.9999999732034297 2.679657028402624e-08 0.9933384400257141 0.00666155997428581 0.9999999999940573 5.942574576075108e-12 0.9993620709123843 0.0006379290876157445 0.9999999990089815 9.910183792257138e-10 0.9999707600256484 2.923997435147043e-05 0.9999999839025631 1.609743691919255e-08 0.9998922846636704 0.0001077153363295324 0.9999999993962335 6.03766596020046e-10 0.99999596244468 4.037555320052592e-06</probabilities>
+		</cpt>
+		<cpt id="diclo_sand">
+			<state id="below_740" />
+			<state id="above_740" />
+			<parents>delta_do_sand doc_ant uva254_ant diclo_ant</parents>
+			<probabilities>0.9956626984126984 0.004337301587301588 0.07608150795767717 0.9239184920423228 0.9797241784037559 0.02027582159624413 0.04154548241300324 0.9584545175869967 0.6 0.4 0.001700680272108844 0.9982993197278911 0.9716981132075472 0.02830188679245283 0.01357466102978917 0.9864253389702109 0.9959621591822478 0.004037840817752191 0.05015329920251996 0.9498467007974801 0.9750459299039005 0.02495407009609949 0.02527106392722295 0.974728936072777 0.75 0.25 2.520923666431381e-07 0.9999997479076334 0.9308943089430896 0.06910569105691057 0.007955724662863694 0.9920442753371365</probabilities>
+		</cpt>
+		<cpt id="gaba_sand">
+			<state id="below_1000" />
+			<state id="above_1000" />
+			<parents>delta_do_sand doc_ant uva254_ant gaba_ant</parents>
+			<probabilities>0.9999778094479004 2.219055209966404e-05 0.2103863381858903 0.7896136618141097 0.9998821999977201 0.0001178000022798541 0.1500902992776058 0.8499097007223942 0.9500000000000001 0.05 0.4090909090909091 0.5909090909090909 0.9991085706212846 0.000891429378715565 0.1126506024096385 0.8873493975903616 0.9999967106747776 3.289325222381781e-06 0.8956587813221291 0.1043412186778709 0.9999788966391996 2.11033608004495e-05 0.3780347530093929 0.6219652469906072 0.9999653931339978 3.460686600221483e-05 0.5170189701897019 0.4829810298102981 0.9998774672269993 0.000122532773000637 0.3380788841932745 0.6619211158067256</probabilities>
+		</cpt>
+		<cpt id="carba_sand">
+			<state id="below_1000" />
+			<state id="above_1000" />
+			<probabilities>0.9927999999999996 0.007200000000000493</probabilities>
+		</cpt>
+		<cpt id="benzo_uv">
+			<state id="below_3000" />
+			<state id="above_3000" />
+			<parents>doc_sand benzo_sand</parents>
+			<probabilities>0.9999999999999991 9.432409924662026e-16 0.1268714723431704 0.8731285276568295 0.999999999999702 2.979691862720608e-13 0.3405710558008831 0.6594289441991168</probabilities>
+		</cpt>
+		<cpt id="diclo_uv">
+			<state id="below_300" />
+			<state id="above_300" />
+			<parents>diclo_sand doc_sand</parents>
+			<probabilities>0.8484064372276687 0.1515935627723311 3.082126091457039e-05 0.9999691787390854 0.5808457711442786 0.4191542288557214 3.42004453392297e-05 0.9999657995546608</probabilities>
+		</cpt>
+		<cpt id="gaba_uv">
+			<state id="below_1000" />
+			<state id="above_1000" />
+			<parents>doc_sand gaba_sand</parents>
+			<probabilities>0.9999999998046256 1.95374214516873e-10 0.5653689017063206 0.4346310982936794 0.9999999955202838 4.479716056243981e-09 0.3711111111111111 0.6288888888888888</probabilities>
+		</cpt>
+		<cpt id="carba_uv">
+			<state id="below_1000" />
+			<state id="above_1000" />
+			<parents>doc_sand carba_sand</parents>
+			<probabilities>0.9999999999345698 6.543016292003654e-11 1 0 0.9999999913470622 8.652937811699369e-09 1 0</probabilities>
+		</cpt>
+		<cpt id="POC">
+			<state id="Compliance" />
+			<state id="Failure" />
+			<parents>benzo_uv carba_uv diclo_uv gaba_uv</parents>
+			<probabilities>1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.4.4601.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="uva254_wwtp">
+				<name>uva254_wwtp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>42 194 124 245</position>
+			</node>
+			<node id="doc_wwtp">
+				<name>doc_wwtp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>50 272 116 313</position>
+			</node>
+			<node id="benzo_wwtp">
+				<name>benzo_wwtp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>43 337 119 384</position>
+			</node>
+			<node id="diclo_wwtp">
+				<name>diclo_wwtp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>40 466 125 509</position>
+			</node>
+			<node id="gaba_wwtp">
+				<name>gaba_wwtp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>45 535 116 579</position>
+			</node>
+			<node id="delta_do_ant">
+				<name>delta_do_ant</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>154 86 229 132</position>
+			</node>
+			<node id="uva254_ant">
+				<name>uva254_ant</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>443 194 525 245</position>
+			</node>
+			<node id="doc_ant">
+				<name>doc_ant</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>451 273 517 314</position>
+			</node>
+			<node id="benzo_ant">
+				<name>benzo_ant</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>446 339 522 386</position>
+			</node>
+			<node id="diclo_ant">
+				<name>diclo_ant</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>441 466 526 509</position>
+			</node>
+			<node id="gaba_ant">
+				<name>gaba_ant</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>446 535 517 579</position>
+			</node>
+			<node id="delta_do_sand">
+				<name>delta_do_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>540 87 629 138</position>
+			</node>
+			<node id="uva254_sand">
+				<name>uva254_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>821 194 903 245</position>
+			</node>
+			<node id="doc_sand">
+				<name>doc_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>829 273 895 314</position>
+			</node>
+			<node id="benzo_sand">
+				<name>benzo_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>824 339 900 386</position>
+			</node>
+			<node id="diclo_sand">
+				<name>diclo_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>819 466 904 509</position>
+			</node>
+			<node id="gaba_sand">
+				<name>gaba_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>824 535 895 579</position>
+			</node>
+			<node id="carba_sand">
+				<name>carba_sand</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>825 403 896 447</position>
+			</node>
+			<node id="benzo_uv">
+				<name>benzo_uv</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1053 341 1129 388</position>
+			</node>
+			<node id="diclo_uv">
+				<name>diclo_uv</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1047 468 1132 511</position>
+			</node>
+			<node id="gaba_uv">
+				<name>gaba_uv</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1053 536 1124 580</position>
+			</node>
+			<node id="carba_uv">
+				<name>carba_uv</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1054 405 1125 449</position>
+			</node>
+			<node id="POC">
+				<name>POC</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1220 385 1261 410</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
