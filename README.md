@@ -1,5 +1,5 @@
 # MasterThesis
-The codes were written in MATLAB R2019b using the Statistics and Machine Learning Toolbox. The functions are part of the methodology used to apply statistical and probabilistic approaches to develop a Bayesian network. The computation of the conditional probability tables were computed using the expectation-maximization algorithm in GeNIe Modeler 2.4.
+The codes were written in MATLAB R2019b using the Statistics and Machine Learning Toolbox. The functions are part of the methodology used to apply statistical and probabilistic approaches to develop a Bayesian network. The computation of the conditional probability tables were computed using the expectation-maximization algorithm in GeNIe Modeler 2.4. The flowchart of the thesis can be found in the file __MasterThesisFlowchart.pdf__.
 
 
 ## Summary
