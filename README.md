@@ -17,3 +17,6 @@ one data set versus the other. The correlation coefficients are stored in a tabl
 #### 3) distribution_fittings_eff_sand.m
 Different probability models are fitted to the input data set (eff_sand.mat) and the maximum likelihood estimator is computed. The results of the latter are stored in a table 
 (matlab_distribution_fittings_eff_sand.xlsx).
+
+### 4) gen_samples_sand.m
+Using the most suitable probability distributions for the variable, random samples are generated applying the Nataf transformation to model the correlation between the variable using a Gaussian copula. The generated random samples are then stored in an excel file (samples_sand.xlsx).
